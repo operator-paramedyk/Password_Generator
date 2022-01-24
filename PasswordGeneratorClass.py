@@ -105,6 +105,7 @@ class PasswordGenerator:
             for i in range(0,number):
                 f.write(f"{self.set_password(self.pass_length, self.charts_included)}\n")
         print(f"Successfully saved {self.token_number} passwords in file {self.filename}.")
+        f.close()
 
     def token_generator(self):
         """Method asking user for parameters of passwords to be saved in file"""
